@@ -27,17 +27,17 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-        "service_65e3aff",
-        "template_v30e14s",
-        {
-          from_name: form.name,
-          to_name: "Fernando Macedo",
-          from_email: form.email,
-          to_email: "fernandocmacedo0106@gmail.com",
-          message: form.message,
-        },
-        "969gN9X0AlYH_3xbh"
-      )
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "Fernando Macedo",
+        from_email: form.email,
+        to_email: "fernandocmacedo0106@gmail.com",
+        message: form.message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
       .then(
         () => {
           setLoading(false);
