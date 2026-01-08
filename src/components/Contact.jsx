@@ -56,11 +56,6 @@ const Contact = () => {
         }
       );
   };
-
-  // 969gN9X0AlYH_3xbh
-// template_v30e14s
-// service_65e3aff
-
   return (
     <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
       <motion.div
